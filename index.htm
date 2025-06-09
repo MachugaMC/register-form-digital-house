@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <!-- ABRIMOS EL DIV -->
+    <div id="register">
+
+        <!-- Titulo -->
+        <h2>Register form</h2>
+        <!-- Abrimos el form -->
+        <form action="" id="formulario" novalidate>
+
+            <!-- Sector para nombre -->
+            <label for="name" class="name">Name</label>
+            <input type="text" name="name" id="name" required autocomplete="off">
+            <div class="error" id="errorName" style="color:cyan;"></div>
+            <br>
+
+            <!-- Sector para apellido -->
+            <label for="lastname" class="lastname">Lastname</label>
+            <input type="text" name="lastname" id="lastname" required autocomplete="off">
+            <div class="error" id="errorLastname" style="color:cyan;"></div>
+            <br>
+
+            <!-- Sector para documento -->
+            <label for="document" class="document">Document</label>
+            <input type="text" name="document" id="document" required autocomplete="off">
+            <div class="error" id="errorDocument" style="color:cyan;"></div>
+            <br>
+
+            <!-- Sector para email -->
+            <label for="email" class="email">Email</label>
+            <input type="email" name="email" id="email" required autocomplete="off">
+            <div class="error" id="errorEmail" style="color:cyan;"></div>
+            <br>
+
+            <!-- Sector para edad -->
+            <label for="age" class="age">Age</label>
+            <input type="number" name="age" id="age" required autocomplete="off">
+            <div class="error" id="errorAge" style="color:cyan;"></div>
+            <br>
+
+
+            <!-- Sector para actividad -->
+            <label for="activity" class="activity">Activity:</label>
+            <!-- en vez de usar un input vamos a usar un select -->
+            <select name="activity" id="activity" required>
+                <option value="">Select...</option>
+                <option value="artifical-inteligence">Artifical Inteligence</option>
+                <option value="programming">Programming</option>
+                <option value="mechanic">Mechanic</option>
+                <option value="systems">Systems</option>
+                <option value="technology">Technology</option>
+                <option value="teacher">Teacher</option>
+            </select>
+            <div class="error" id="errorActivity" style=" color:cyan;"></div>
+            <br>
+
+            <!-- Sector para el nivel de estudio -->
+            <label for="study level" class="study-level">Study Level:</label>
+            <select name="study level" id="studyLevel" required>
+                <option value="">Select...</option>
+                <option value="secondary">Secondary</option>
+                <option value="tertiary">Tertiary</option>
+                <option value="incomplete-university">Incomplete university</option>
+                <option value="university">University</option>
+                <option value="university-graduate">University graduate</option>
+            </select>
+            <div class="error" id="errorStudyLevel" style=" color:cyan;"></div>
+            <br>
+
+            <!-- Sector para terminos y condiciones -->
+            <label for="terms-conditions" class="inline">
+                <input type="checkbox" name="terms-conditions" id="termsConditions" required>
+                <a href="#">I agree to the terms and conditions.</a>
+            </label>
+            <div class="error" id="errorTermsConditions" style=" color:cyan;"></div>
+            <br>
+
+            <label class="inline">Publicity</label>
+            <input type="checkbox" name="publicity" id="publicity" class="checkbox" value="Publicity">
+            <label for="oferts" class="inline">Oferts</label>
+            <input type="checkbox" name="oferts" id="oferts" class="checkbox" value="Oferts">
+            <label for="news">News</label>
+            <input type="checkbox" name="news" id="news" class="checkbox">
+            <div class="error" id="errorPubli style=" color:cyan;"city"></div>
+            <br>
+
+            <input type="submit" value="Send form">
+
+        </form>
+        <!-- Cerramos el form -->
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

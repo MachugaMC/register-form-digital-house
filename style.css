@@ -1,0 +1,108 @@
+/* Hago que cuando se seleccione algo se ponga como lo siguiente */
+*::selection {
+    color: tomato;
+    background-color: antiquewhite;
+}
+/* Que todo el texto sea de color blanco */
+* {
+    color: white;
+}
+/* le pongo el display flex y justify content para que se centre todo en el medio */
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background:linear-gradient(245.59deg, rgba(0, 0, 0, 0.781) 0%, rgba(0, 0, 0, 0.877) 25%, black 75%, #3f0e05e1 100%) fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+}
+h2 {
+    text-align: center;
+}
+
+
+#register {
+    background:linear-gradient(to top, black 0%, rgb(48, 48, 14) 25%, rgba(0, 0, 0, 0.007) 75%, tomato 100%) fixed;
+    padding: 20px;
+    border-radius: 28px;
+    margin: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.418);
+    width: 400px;
+    height: 100vh;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    background-color: tomato;
+    border-radius: 4px;
+    border: 1px solid cyan;
+}
+
+.name, .lastname, .document, .email, .age, .activity, .study-level {
+    background-color: rgba(0, 0, 0, 0.096);
+    border-radius: 4px;
+}
+
+/* Establezco los tamaños individuales */
+.name { width: 40px; }
+.lastname { width: 58px; }
+.document { width: 60px; }
+.email { width: 35px; }
+.age { width: 25px; }
+.activity { width: 50px; }
+.study-level { width: 80px; }
+
+
+input, select {
+    margin-bottom: 7px;
+    padding: 8px;
+    box-sizing: border-box;
+    background-color: tomato;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    text-shadow: 1px 1px 2px cyan;
+    transition: 0.2s ease-in-out;
+}
+select:hover{
+    background-color: rgba(255, 99, 71, 0.884);
+}
+input:hover {
+    background-color: rgba(255, 99, 71, 0.884);
+    border-radius: 6px;
+}
+
+
+input[type="text"],
+input[type="email"] ,
+input[type="number"],
+select {
+    width: 100%;
+}
+input[type="submit"] {
+    background-color: antiquewhite;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-shadow: 0 0 0;
+    transition: 0.3s ease-in;
+}
+input[type="submit"]:hover {
+    background-color: rgba(250, 235, 215, 0.774);
+    border-radius: 8px;
+    width: 80%;
+    margin-left:40px;
+}
+
+a {
+    text-decoration: none;
+    color: deepskyblue;
+}
